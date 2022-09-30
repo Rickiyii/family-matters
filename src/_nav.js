@@ -6,6 +6,7 @@ import {
   cilChartPie,
   cilCursor,
   cilDescription,
+  cilDollar,
   cilDrop,
   cilNotes,
   cilPencil,
@@ -16,6 +17,12 @@ import {
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
+  {
+    component: CNavItem,
+    name: '家庭账单',
+    to: '/family-bills',
+    icon: <CIcon icon={cilDollar} customClassName="nav-icon" />,
+  },
   {
     component: CNavItem,
     name: 'Dashboard',
