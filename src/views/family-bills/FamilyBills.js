@@ -9,6 +9,7 @@ import {
   CInputGroup,
   CRow,
   CFormSelect,
+  CButton,
 } from '@coreui/react'
 import ReactMarkdown from 'react-markdown'
 import { Filename } from 'src/components'
@@ -44,6 +45,11 @@ const FamilyBills = () => {
             </CInputGroup>
             <CInputGroup className="mb-3">
               <Filename />
+            </CInputGroup>
+            <CInputGroup className="mb-3">
+              <CButton id="submit" color="primary">
+                确定
+              </CButton>
             </CInputGroup>
           </CCardBody>
         </CCard>
